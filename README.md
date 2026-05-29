@@ -114,7 +114,9 @@ Azure OCR PostgreSQL API es una solución desarrollada en Python con FastAPI que
 ## Diagrama de Arquitectura
 
 ```markdown
-![Arquitectura Azure](docs/images/azure-architecture.png)
+<p align="center">
+  <img src="docs/images/azure-architecture.png" alt="Arquitectura Azure" width="700"/>
+</p>
 ```
 ---
 
