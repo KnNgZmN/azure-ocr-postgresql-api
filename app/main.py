@@ -8,6 +8,8 @@ from app.schemas import DocumentResponse
 from app.services.ocr_service import extract_text
 from app.services.text_processor import clean_text
 
+from app.logger import logger
+
 
 # Crear tablas si no existen
 Base.metadata.create_all(bind=engine)
@@ -32,11 +34,15 @@ async def upload_document(file: UploadFile = File(...)):
     db: Session = SessionLocal()
 
     try:
+        logger.info(f"Archivo recibido: {file.filename}")
+
         file_bytes = await file.read()
 
         extracted_text = extract_text(file_bytes)
+        logger.info("OCR ejecutado correctamente")
 
         processed_text = clean_text(extracted_text)
+        logger.info("Texto procesado correctamente")
 
         document = Document(
             filename=file.filename,
@@ -48,6 +54,10 @@ async def upload_document(file: UploadFile = File(...)):
         db.commit()
         db.refresh(document)
 
+        logger.info(
+            f"Documento almacenado correctamente con ID {document.id}"
+        )
+
         return {
             "message": "Documento procesado correctamente",
             "id": document.id,
@@ -57,6 +67,11 @@ async def upload_document(file: UploadFile = File(...)):
 
     except Exception as e:
         db.rollback()
+
+        logger.error(
+            f"Error procesando documento: {str(e)}",
+            exc_info=True
+        )
 
         raise HTTPException(
             status_code=500,
@@ -72,8 +87,26 @@ def get_documents():
     db: Session = SessionLocal()
 
     try:
+        logger.info("Consulta de documentos ejecutada")
+
         documents = db.query(Document).all()
+
+        logger.info(
+            f"Se recuperaron {len(documents)} documentos"
+        )
+
         return documents
+
+    except Exception as e:
+        logger.error(
+            f"Error consultando documentos: {str(e)}",
+            exc_info=True
+        )
+
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error consultando documentos: {str(e)}"
+        )
 
     finally:
         db.close()

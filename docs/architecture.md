@@ -28,20 +28,30 @@ Azure App Service (FastAPI)
 5. La información se almacena en PostgreSQL.
 6. La API retorna el resultado al usuario.
 
-## Ambiente QA
+## Estrategia de Ambientes
 
-- Azure App Service (QA)
-- PostgreSQL QA
+La solución contempla dos ambientes independientes:
+
+### QA
+
+- Azure App Service Plan QA
+- Azure App Service QA
+- Azure Database for PostgreSQL QA
 - Variables de entorno QA
-- Recursos aislados
 
-## Ambiente Producción
+Objetivo:
+Validar nuevas funcionalidades antes de producción.
 
-- Azure App Service (PROD)
-- PostgreSQL PROD
+### Producción
+
+- Azure App Service Plan PROD
+- Azure App Service PROD
+- Azure Database for PostgreSQL PROD
 - Azure Key Vault
 - Azure Monitor
-- Auto Scaling
+
+Objetivo:
+Atender usuarios finales garantizando disponibilidad y seguridad.
 
 ## Seguridad
 

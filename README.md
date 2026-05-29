@@ -129,6 +129,7 @@ azure-ocr-postgresql-api/
 │   ├── main.py
 │   ├── database.py
 │   ├── models.py
+│   ├── logger.py
 │   ├── schemas.py
 │   │
 │   └── services/
@@ -138,6 +139,9 @@ azure-ocr-postgresql-api/
 ├── docs/
 │   ├── arquitectura.md
 │   └── images/
+│
+│── logs/
+│    ├── app.log
 │
 ├── sql/
 │   └── schema.sql
@@ -335,6 +339,8 @@ Obtiene los documentos almacenados.
 - Rollback de transacciones ante errores.
 - Documentación automática con Swagger/OpenAPI.
 - Código modular y mantenible.
+- Logging de operaciones y errores.
+- Observabilidad básica mediante archivo de logs.
 
 ---
 

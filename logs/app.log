@@ -1,0 +1,184 @@
+2026-05-29 15:28:37,874 - INFO - Archivo recibido: PROPUESTA METODOLÓGICA BUSINESS ANALYTICS & BIG DATA.pdf
+2026-05-29 15:28:37,878 - INFO - Request URL: 'https://ocr-service-kevin.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Length': '171702'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'f92e3a59-5b9c-11f1-b0e1-f02f74d53c3e'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.14.5 (Windows-11-10.0.26200-SP0)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+2026-05-29 15:28:41,421 - INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://ocr-service-kevin.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/68a24573-5941-48bd-a231-bfbbaca1f460?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '73'
+    'apim-request-id': '68a24573-5941-48bd-a231-bfbbaca1f460'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Fri, 29 May 2026 20:28:20 GMT'
+2026-05-29 15:28:41,422 - INFO - Request URL: 'https://ocr-service-kevin.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/68a24573-5941-48bd-a231-bfbbaca1f460?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': 'f92e3a59-5b9c-11f1-b0e1-f02f74d53c3e'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.14.5 (Windows-11-10.0.26200-SP0)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+2026-05-29 15:28:41,646 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '3'
+    'x-envoy-upstream-service-time': '11'
+    'apim-request-id': '7c80cfd7-ff5d-4e53-bbde-c1ddf233fe51'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Fri, 29 May 2026 20:28:20 GMT'
+2026-05-29 15:28:44,647 - INFO - Request URL: 'https://ocr-service-kevin.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/68a24573-5941-48bd-a231-bfbbaca1f460?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': 'f92e3a59-5b9c-11f1-b0e1-f02f74d53c3e'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.14.5 (Windows-11-10.0.26200-SP0)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+2026-05-29 15:28:45,322 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '58665'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '38'
+    'apim-request-id': '3be673eb-c5c0-400e-a38d-a983cc0f9071'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Fri, 29 May 2026 20:28:23 GMT'
+2026-05-29 15:28:45,368 - INFO - OCR ejecutado correctamente
+2026-05-29 15:28:45,368 - INFO - Texto procesado correctamente
+2026-05-29 15:28:45,377 - INFO - Documento almacenado correctamente con ID 4
+2026-05-29 15:34:46,441 - INFO - Archivo recibido: Certificado - Curso IA.pdf
+2026-05-29 15:34:46,456 - INFO - Request URL: 'https://ocr-service-kevin.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Length': '9315886'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'd4dee3da-5b9d-11f1-88b6-f02f74d53c3e'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.14.5 (Windows-11-10.0.26200-SP0)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+2026-05-29 15:34:50,627 - INFO - Response status: 400
+Response headers:
+    'Content-Length': '201'
+    'Content-Type': 'application/json; charset=utf-8'
+    'ms-azure-ai-errorcode': 'InvalidRequest'
+    'x-ms-error-code': 'InvalidRequest'
+    'apim-request-id': 'bc175bed-cc6a-4417-ad21-32114fe1428b'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Fri, 29 May 2026 20:34:29 GMT'
+2026-05-29 15:34:50,627 - ERROR - Error procesando documento: (InvalidRequest) Invalid request.
+Code: InvalidRequest
+Message: Invalid request.
+Inner error: {
+    "code": "InvalidContentLength",
+    "message": "The input image is too large. Refer to documentation for the maximum file size."
+}
+Traceback (most recent call last):
+  File "E:\Universitaria\7 Semestre\prueba-tecnica-azure\app\main.py", line 41, in upload_document
+    extracted_text = extract_text(file_bytes)
+  File "E:\Universitaria\7 Semestre\prueba-tecnica-azure\app\services\ocr_service.py", line 19, in extract_text
+    poller = client.begin_analyze_document(
+        "prebuilt-read",
+        file_bytes
+    )
+  File "E:\Universitaria\7 Semestre\prueba-tecnica-azure\venv\Lib\site-packages\azure\core\tracing\decorator.py", line 119, in wrapper_use_tracer
+    return func(*args, **kwargs)
+  File "E:\Universitaria\7 Semestre\prueba-tecnica-azure\venv\Lib\site-packages\azure\ai\formrecognizer\_document_analysis_client.py", line 129, in begin_analyze_document
+    return _client_op_path.begin_analyze_document(  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+        model_id=model_id,
+        ^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "E:\Universitaria\7 Semestre\prueba-tecnica-azure\venv\Lib\site-packages\azure\core\tracing\decorator.py", line 119, in wrapper_use_tracer
+    return func(*args, **kwargs)
+  File "E:\Universitaria\7 Semestre\prueba-tecnica-azure\venv\Lib\site-packages\azure\ai\formrecognizer\_generated\v2023_07_31\operations\_document_models_operations.py", line 518, in begin_analyze_document
+    raw_result = self._analyze_document_initial(  # type: ignore
+        model_id=model_id,
+    ...<10 lines>...
+        **kwargs
+    )
+  File "E:\Universitaria\7 Semestre\prueba-tecnica-azure\venv\Lib\site-packages\azure\ai\formrecognizer\_generated\v2023_07_31\operations\_document_models_operations.py", line 443, in _analyze_document_initial
+    raise HttpResponseError(response=response)
+azure.core.exceptions.HttpResponseError: (InvalidRequest) Invalid request.
+Code: InvalidRequest
+Message: Invalid request.
+Inner error: {
+    "code": "InvalidContentLength",
+    "message": "The input image is too large. Refer to documentation for the maximum file size."
+}
+2026-05-29 15:35:24,896 - INFO - Archivo recibido: PROPUESTA METODOLÓGICA BUSINESS ANALYTICS & BIG DATA.pdf
+2026-05-29 15:35:24,897 - INFO - Request URL: 'https://ocr-service-kevin.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Length': '171702'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'ebc87a65-5b9d-11f1-a493-f02f74d53c3e'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.14.5 (Windows-11-10.0.26200-SP0)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+2026-05-29 15:35:25,118 - INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://ocr-service-kevin.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/6686a1ed-52e5-46e6-a857-12cf325a2f8a?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '81'
+    'apim-request-id': '6686a1ed-52e5-46e6-a857-12cf325a2f8a'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Fri, 29 May 2026 20:35:03 GMT'
+2026-05-29 15:35:25,119 - INFO - Request URL: 'https://ocr-service-kevin.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/6686a1ed-52e5-46e6-a857-12cf325a2f8a?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': 'ebc87a65-5b9d-11f1-a493-f02f74d53c3e'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.14.5 (Windows-11-10.0.26200-SP0)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+2026-05-29 15:35:25,242 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '3'
+    'x-envoy-upstream-service-time': '11'
+    'apim-request-id': '6a44b41f-efb0-46a4-9b2b-bb8d02131e31'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Fri, 29 May 2026 20:35:04 GMT'
+2026-05-29 15:35:28,243 - INFO - Request URL: 'https://ocr-service-kevin.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/6686a1ed-52e5-46e6-a857-12cf325a2f8a?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': 'ebc87a65-5b9d-11f1-a493-f02f74d53c3e'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.14.5 (Windows-11-10.0.26200-SP0)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+2026-05-29 15:35:28,567 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '58665'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '39'
+    'apim-request-id': '3c9aacfc-32c2-444d-90af-f5c39c6b3aa5'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Fri, 29 May 2026 20:35:07 GMT'
+2026-05-29 15:35:28,610 - INFO - OCR ejecutado correctamente
+2026-05-29 15:35:28,610 - INFO - Texto procesado correctamente
+2026-05-29 15:35:28,614 - INFO - Documento almacenado correctamente con ID 5
